@@ -287,6 +287,7 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   letter-spacing: 0.3px;
+  font-family: 'Cinzel', serif;
 }
 
 .ent-nav-link::after {
@@ -316,8 +317,8 @@
   padding: 14px 32px;
   background: linear-gradient(135deg, var(--ent-accent-primary) 0%, var(--ent-accent-secondary) 100%);
   color: var(--ent-bg-deep);
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 0.85rem;
   border-radius: 12px;
   text-decoration: none;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -326,7 +327,7 @@
   overflow: hidden;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-family: 'Cinzel', serif;
 }
 
 .ent-header-cta::before {
@@ -408,6 +409,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+  margin-left: auto;
 }
 
 .ent-mobile-toggle::before {
@@ -550,7 +552,7 @@
   letter-spacing: 0.3px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Cinzel', serif;
 }
 
 .ent-mobile-nav-link::before {
@@ -595,7 +597,7 @@
   border: 2px solid rgba(0, 240, 255, 0.3);
   width: 100%;
   display: block;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Cinzel', serif;
 }
 
 .ent-mobile-nav-cta::before {

@@ -19,7 +19,7 @@ const translations = {
       subtitle: "The only AI engine that <strong>actually remembers</strong> your customers. 13 Arabic dialects. Zero hallucinations. Built for enterprises who refuse to settle.",
       cta: "Schedule Demo",
       explore: "Explore Capabilities",
-      trust: "AES-256 Encryption • Secure API • Proprietary Technology (Patent Pending)",
+      trust: "AES-256 Encryption • Secure API • Proprietary Technology",
     },
     stats: {
       accuracy: "Accuracy Score",
@@ -83,9 +83,9 @@ const translations = {
       note: "All plans include: API documentation • Integration support • Dedicated onboarding",
       ip: "🔒 Proprietary Technology",
       tiers: [
-        { tier: "Starter", price: "499", period: "/month", cta: "Schedule Demo", features: ["10,000 API calls/month", "Basic memory (30-day retention)", "3 Arabic dialects + English", "Email support", "Basic analytics", { text: "Contradiction detection", included: false }, { text: "Custom persona training", included: false }, { text: "White-label option", included: false }] },
+        { tier: "Starter", price: "499", period: "/month", cta: "Schedule Demo", features: ["10,000 API calls/month", "Full memory (unlimited retention)", "All 13 Arabic dialects + English", "Email support (48hr)", "Basic analytics dashboard", { text: "Contradiction detection", included: false }, { text: "Custom persona training", included: false }, { text: "White-label option", included: false }] },
         { tier: "Professional", price: "1,499", period: "/month", popular: true, cta: "Schedule Demo", features: ["50,000 API calls/month", "Full memory (unlimited retention)", "All 13 Arabic dialects + English", "Priority support (24hr)", "Advanced analytics + insights", "Contradiction & loop detection", "Custom persona training", { text: "White-label option", included: false }] },
-        { tier: "Enterprise", price: "Custom", period: "", cta: "Contact Sales", features: ["Unlimited API calls", "Full memory + cross-property sync", "All dialects + custom training", "Dedicated success manager", "SLA + uptime guarantee", "All behavioral features", "White-label option", "On-premise deployment"] },
+        { tier: "Enterprise", price: "Custom", period: "", cta: "Contact Sales", features: ["Unlimited API calls", "Full memory + cross-property sync", "All dialects + custom training", "Dedicated success manager", "Custom SLA (99.9% uptime)", "All behavioral features", "White-label option (your branding)", "On-premise deployment option"] },
       ],
     },
     security: {
@@ -199,9 +199,9 @@ const translations = {
       note: "كل الباقات تشمل: توثيق API • دعم التكامل • تهيئة مخصصة",
       ip: "🔒 تقنية محمية",
       tiers: [
-        { tier: "المبتدئ", price: "499", period: "/شهرياً", cta: "احجز عرض", features: ["10,000 طلب API/شهرياً", "ذاكرة أساسية (30 يوم)", "3 لهجات عربية + إنجليزي", "دعم بالإيميل", "تحليلات أساسية", { text: "كشف التناقضات", included: false }, { text: "تدريب شخصية مخصصة", included: false }, { text: "وايت ليبل", included: false }] },
-        { tier: "المحترف", price: "1,499", period: "/شهرياً", popular: true, cta: "احجز عرض", features: ["50,000 طلب API/شهرياً", "ذاكرة كاملة (بدون حد)", "كل الـ13 لهجة + إنجليزي", "دعم أولوية (24 ساعة)", "تحليلات متقدمة", "كشف التناقضات والتكرار", "تدريب شخصية مخصصة", { text: "وايت ليبل", included: false }] },
-        { tier: "المؤسسات", price: "مخصص", period: "", cta: "تواصل معنا", features: ["طلبات API غير محدودة", "ذاكرة كاملة + مزامنة الفروع", "كل اللهجات + تدريب مخصص", "مدير نجاح مخصص", "ضمان SLA + وقت التشغيل", "كل ميزات السلوك", "وايت ليبل", "تثبيت داخلي"] },
+        { tier: "المبتدئ", price: "499", period: "/شهرياً", cta: "احجز عرض", features: ["10,000 طلب API/شهرياً", "ذاكرة كاملة (بدون حد)", "كل الـ13 لهجة + إنجليزي", "دعم بالإيميل (48 ساعة)", "لوحة تحليلات أساسية", { text: "كشف التناقضات", included: false }, { text: "تدريب شخصية مخصصة", included: false }, { text: "وايت ليبل", included: false }] },
+        { tier: "المحترف", price: "1,499", period: "/شهرياً", popular: true, cta: "احجز عرض", features: ["50,000 طلب API/شهرياً", "ذاكرة كاملة (بدون حد)", "كل الـ13 لهجة + إنجليزي", "دعم أولوية (24 ساعة)", "تحليلات متقدمة + رؤى", "كشف التناقضات والتكرار", "تدريب شخصية مخصصة", { text: "وايت ليبل", included: false }] },
+        { tier: "المؤسسات", price: "مخصص", period: "", cta: "تواصل معنا", features: ["طلبات API غير محدودة", "ذاكرة كاملة + مزامنة الفروع", "كل اللهجات + تدريب مخصص", "مدير نجاح مخصص", "SLA مخصص (99.9% وقت تشغيل)", "كل ميزات السلوك", "وايت ليبل (براندك)", "خيار التثبيت الداخلي"] },
       ],
     },
     security: {
@@ -380,7 +380,7 @@ export default function EnterprisePage() {
   const t = translations[language];
   const isAr = language === "ar";
 
-  const tokensCounter = useCountUp(12000000, 2500);
+  const tokensCounter = useCountUp(12, 2500);
   const accuracyCounter = useCountUp(99, 2000);
   const dialectsCounter = useCountUp(13, 1500);
   const auditsCounter = useCountUp(50000, 2200);
@@ -522,7 +522,7 @@ export default function EnterprisePage() {
             </div>
             <div className="ent-stats-orbit">
               <div className="ent-stats-orbit-item" style={{ "--angle": "0deg" }}>
-                <span className="ent-orbit-value" ref={tokensCounter.ref}>{tokensCounter.count.toLocaleString()}</span>
+                <span className="ent-orbit-value" ref={tokensCounter.ref}>{tokensCounter.count}M+</span>
                 <span className="ent-orbit-label">{t.stats.tokens}</span>
               </div>
               <div className="ent-stats-orbit-item" style={{ "--angle": "90deg" }}>

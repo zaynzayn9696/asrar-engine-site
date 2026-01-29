@@ -66,8 +66,8 @@ const translations = {
       ],
     },
     architecture: {
-      title: "Technical Architecture",
-      subtitle: "Enterprise-grade infrastructure built for scale",
+      title: "Next-Generation Architecture",
+      subtitle: "Military-grade infrastructure engineered for infinite scale",
       stack: [
         { layer: "Frontend", tech: "React + Vite", color: "#61dafb" },
         { layer: "API Layer", tech: "Node.js + Express", color: "#68a063" },
@@ -182,8 +182,8 @@ const translations = {
       ],
     },
     architecture: {
-      title: "البنية التقنية",
-      subtitle: "بنية تحتية بمستوى المؤسسات مبنية للتوسع",
+      title: "بنية الجيل القادم",
+      subtitle: "بنية تحتية بمستوى عسكري مصممة للتوسع اللامحدود",
       stack: [
         { layer: "الواجهة", tech: "React + Vite", color: "#61dafb" },
         { layer: "طبقة API", tech: "Node.js + Express", color: "#68a063" },
@@ -516,7 +516,7 @@ export default function EnterprisePage() {
           <div className="ent-stats-ring">
             <div className="ent-stats-ring-inner">
               <div className="ent-stats-center">
-                <span className="ent-stats-center-value">99%</span>
+                <span className="ent-stats-center-value">A+</span>
                 <span className="ent-stats-center-label">{t.stats.accuracy}</span>
               </div>
             </div>
@@ -892,7 +892,7 @@ export default function EnterprisePage() {
               <span className="ent-footer-stat-label">{t.footer.tokens}</span>
             </div>
             <div className="ent-footer-stat">
-              <span className="ent-footer-stat-value">99%</span>
+              <span className="ent-footer-stat-value">A+</span>
               <span className="ent-footer-stat-label">{t.footer.accuracy}</span>
             </div>
             <div className="ent-footer-stat">

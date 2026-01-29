@@ -16,7 +16,7 @@ const translations = {
       eyebrow: "Enterprise Intelligence Solutions",
       title1: "Conversational AI",
       title2: "Years Ahead",
-      subtitle: "The only AI engine that <strong>actually remembers</strong> your customers. 13 Arabic dialects. Zero hallucinations. Built for enterprises who refuse to settle.",
+      subtitle: "The most advanced AI engine that <strong>truly remembers</strong> your customers. 13 Arabic dialects. Zero hallucinations. Built for enterprises who refuse to settle.",
       cta: "Schedule Demo",
       explore: "Explore Capabilities",
       trust: "AES-256 Encryption • Secure API • Proprietary Technology",

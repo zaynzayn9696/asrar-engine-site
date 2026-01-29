@@ -779,10 +779,10 @@ export default function EnterprisePage() {
               period="/month"
               features={[
                 { text: "10,000 API calls/month", included: true },
-                { text: "Basic memory (30-day retention)", included: true },
-                { text: "3 Arabic dialects + English", included: true },
-                { text: "Email support", included: true },
-                { text: "Basic analytics", included: true },
+                { text: "Full memory (unlimited retention)", included: true },
+                { text: "All 13 Arabic dialects + English", included: true },
+                { text: "Email support (48hr)", included: true },
+                { text: "Basic analytics dashboard", included: true },
                 { text: "Contradiction detection", included: false },
                 { text: "Custom persona training", included: false },
                 { text: "White-label option", included: false },

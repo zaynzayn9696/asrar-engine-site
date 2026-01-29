@@ -48,7 +48,7 @@ const translations = {
         { title: "Dialect Purity", score: "98%", desc: "13 Arabic dialects with zero contamination" },
         { title: "Behavioral Detection", score: "99%", desc: "Pattern analysis and contradiction surfacing" },
         { title: "Self-Learning Engine", score: "97%", desc: "Adaptive personalization per customer" },
-        { title: "Response Latency", score: "<2s", desc: "Enterprise-grade performance" },
+        { title: "Response Latency", score: "<3", desc: "Enterprise-grade performance" },
         { title: "Upselling Intelligence", score: "99.5%", desc: "Context-aware product recommendations" },
       ],
     },
@@ -534,7 +534,7 @@ export default function EnterprisePage() {
                 <span className="ent-orbit-label">{t.stats.audits}</span>
               </div>
               <div className="ent-stats-orbit-item" style={{ "--angle": "270deg" }}>
-                <span className="ent-orbit-value">&lt;2s</span>
+                <span className="ent-orbit-value">&lt;3s</span>
                 <span className="ent-orbit-label">{t.stats.response}</span>
               </div>
             </div>

@@ -44,12 +44,12 @@ const translations = {
       title: "ASRAR Intelligence Engine",
       subtitle: "We built what enterprise actually needs",
       items: [
-        { title: "Memory Intelligence", score: "99%", desc: "Cross-session memory with semantic retrieval" },
-        { title: "Dialect Purity", score: "98%", desc: "13 Arabic dialects with zero contamination" },
-        { title: "Behavioral Detection", score: "99%", desc: "Pattern analysis and contradiction surfacing" },
-        { title: "Self-Learning Engine", score: "97%", desc: "Adaptive personalization per customer" },
-        { title: "Response Latency", score: "<3", desc: "Enterprise-grade performance" },
-        { title: "Upselling Intelligence", score: "99.5%", desc: "Context-aware product recommendations" },
+        { title: "Memory Intelligence", score: "Advanced", desc: "Cross-session memory with semantic retrieval" },
+        { title: "Dialect Purity", score: "13 Dialects", desc: "Native-level accuracy across all Arabic variants" },
+        { title: "Behavioral Detection", score: "Real-time", desc: "Pattern analysis and contradiction surfacing" },
+        { title: "Self-Learning Engine", score: "Adaptive", desc: "Continuous improvement per customer" },
+        { title: "Response Latency", score: "<2.8s", desc: "Enterprise-grade performance" },
+        { title: "Upselling Intelligence", score: "Contextual", desc: "Smart product recommendations" },
       ],
     },
     industries: {
@@ -160,12 +160,12 @@ const translations = {
       title: "محرك أسرار الذكي",
       subtitle: "بنينا اللي الشركات فعلياً بتحتاجه",
       items: [
-        { title: "ذكاء الذاكرة", score: "99%", desc: "ذاكرة عبر الجلسات مع استرجاع ذكي" },
-        { title: "نقاء اللهجة", score: "98%", desc: "١٣ لهجة عربية بدون خلط" },
-        { title: "كشف السلوك", score: "99%", desc: "تحليل الأنماط وكشف التناقضات" },
-        { title: "تعلم ذاتي", score: "97%", desc: "تخصيص تلقائي لكل زبون" },
-        { title: "سرعة الرد", score: "<2 ثانية", desc: "أداء بمستوى المؤسسات" },
-        { title: "ذكاء البيع", score: "99.5%", desc: "توصيات منتجات حسب السياق" },
+        { title: "ذكاء الذاكرة", score: "متقدم", desc: "ذاكرة عبر الجلسات مع استرجاع ذكي" },
+        { title: "نقاء اللهجة", score: "١٣ لهجة", desc: "دقة مستوى اللغة الأم عبر كل اللهجات" },
+        { title: "كشف السلوك", score: "فوري", desc: "تحليل الأنماط وكشف التناقضات" },
+        { title: "تعلم ذاتي", score: "تكيفي", desc: "تحسين مستمر لكل زبون" },
+        { title: "سرعة الرد", score: "<٢.٨ث", desc: "أداء بمستوى المؤسسات" },
+        { title: "ذكاء البيع", score: "سياقي", desc: "توصيات منتجات ذكية" },
       ],
     },
     industries: {
@@ -569,11 +569,11 @@ export default function EnterprisePage() {
             <div className="ent-solution-features">
               <div className="ent-solution-feature">
                 <span className="ent-solution-check">✓</span>
-                <span><strong>99% Memory Recall</strong> — Cross-session memory with semantic retrieval</span>
+                <span><strong>Advanced Memory Recall</strong> — Cross-session memory with semantic retrieval</span>
               </div>
               <div className="ent-solution-feature">
                 <span className="ent-solution-check">✓</span>
-                <span><strong>13 Pure Arabic Dialects</strong> — Zero MSA contamination, 98% accuracy</span>
+                <span><strong>13 Pure Arabic Dialects</strong> — Native-level fluency with zero MSA contamination</span>
               </div>
               <div className="ent-solution-feature">
                 <span className="ent-solution-check">✓</span>

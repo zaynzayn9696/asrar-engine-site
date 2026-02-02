@@ -402,13 +402,22 @@ export default function EnterprisePage() {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
     };
+    
+    const handleResize = () => {
+      if (window.innerWidth > 1024 && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
     
     return () => {
       clearInterval(interval);
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isMobileMenuOpen]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -692,6 +701,17 @@ export default function EnterprisePage() {
               <IndustryCard key={i} {...industry} delay={i * 100} />
             ))}
           </div>
+          <div className="ent-industries-custom-note">
+            <div className="ent-custom-note-icon">✨</div>
+            <div className="ent-custom-note-content">
+              <h3 className="ent-custom-note-title">{isAr ? 'حلول مخصصة لعملك' : 'Custom Solutions for Your Business'}</h3>
+              <p className="ent-custom-note-text">
+                {isAr 
+                  ? 'نستطيع تخصيص أي ميزة تحتاجها لتناسب عملك. يمكننا إنشاء خدمات مخصصة خاصة بك لتناسب احتياجات عملك تماماً - الميزات حسب اختيارك، وستكون آمنة ومخصصة فقط لعملك. سواء كانت عمليات تشغيلية، معالجة بيانات، أنظمة إدارة لتسريع عمل المدراء، أو أي شيء آخر تحتاجه.'
+                  : 'We can customize any feature you need to suit your business. We create your own customized services to fit your business needs perfectly - the features are up to you, and they will be secured and ONLY for your business. Whether it\'s operations, data handling, management systems to help managers get things done faster, or anything else you need.'}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -868,11 +888,20 @@ export default function EnterprisePage() {
                 ))}
               </div>
               <div className="ent-contact-direct">
-                <p><strong>{t.contact.ready}</strong></p>
-                <a href="mailto:partners@asrarai.com" className="ent-contact-email-btn">
-                  <span>📧</span> partners@asrarai.com
-                </a>
-                <p className="ent-contact-response">{t.contact.response}</p>
+                <div className="ent-contact-email-card">
+                  <div className="ent-contact-email-header">
+                    <div className="ent-contact-email-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <h4>{t.contact.ready}</h4>
+                  </div>
+                  <a href="mailto:partners@asrarai.com" className="ent-contact-email-link">
+                    partners@asrarai.com
+                  </a>
+                  <p className="ent-contact-response">{t.contact.response}</p>
+                </div>
               </div>
             </div>
           </div>
